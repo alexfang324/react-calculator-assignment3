@@ -1,5 +1,12 @@
 * {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Press Start 2P", cursive;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin: 0;
+  background: linear-gradient(to right, #dc8686, #f0dbaf);
 }
 #root {
   height: 100vh;
@@ -7,34 +14,65 @@
   justify-content: center;
   align-items: center;
 }
+
 .app {
   width: 400px;
-  height: 460px;
-  background-color: black;
+  height: 600px;
+  background-color: #212121;
   padding: 20px;
   border-radius: 20px;
-  border: solid 3px gray;
+  border: solid 3px #424242;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .header {
-  color: white;
+  color: #ffeb3b;
   margin: 10px 0;
-  font-size: 20px;
+  font-size: 24px;
 }
 
 .screen {
-  box-sizing: border-box;
   display: flex;
-  justify-content: right;
+  justify-content: flex-end;
   align-items: center;
   width: 100%;
   height: 80px;
-  background-color: silver;
+  background-color: #424242;
   border-radius: 10px;
   margin-bottom: 20px;
 }
 
 .display-value {
   padding-right: 20px;
-  font-size: 50px;
+  font-size: 36px;
+  color: #ffffff;
+}
+
+.button {
+  width: 80px;
+  height: 80px;
+  margin: 5px;
+  font-size: 18px;
+  background-color: #616161;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #757575;
+}
+
+.keypad {
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.large-button {
+  grid-column: span 2;
+  width: 170px;
 }
