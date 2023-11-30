@@ -1,19 +1,19 @@
-import { useState } from 'react';
-import '../public/styles/App.css';
-import Header from './Header';
-import Screen from './Screen';
-import Keypad from './Keypad';
+import { useState } from "react";
+import "../public/styles/App.css";
+import Header from "./Header";
+import Screen from "./Screen";
+import Keypad from "./Keypad";
 function App() {
-  const headerText = 'React Calculator';
+  const headerText = "React Calculator";
 
   //state for the currently displayed key
-  const [displayVal, setDisplayVal] = useState('');
+  const [displayVal, setDisplayVal] = useState("");
 
   //The callback function that will be passed to every button component.
   const onBtnClick = ({ type, text, value }) => {
     switch (type) {
       default:
-        setDisplayVal('button works');
+        setDisplayVal("3333333333333333333333333333333");
     }
   };
 

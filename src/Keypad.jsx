@@ -1,16 +1,14 @@
-import { calculatorButtons } from '../data/button-data';
-import Button from './Button';
+import React from "react";
+import { calculatorButtons } from "../data/button-data";
+import Button from "./Button";
 
 function Keypad({ onBtnClick }) {
-  //get the first button data from file
-  const btn = calculatorButtons[0];
-  //building a keypad with the first button but you should use a forloop
-  //to loop through the file and build all the buttons
-  const keypadGrid = (
+  // Use map to create an array of Button components for each button in the data
+  const keypadButtons = calculatorButtons.map((btn) => (
     <Button key={btn.text} onBtnClick={onBtnClick} btnContent={btn} />
-  );
+  ));
 
-  return <>{keypadGrid}</>;
+  return <div className="keypad">{keypadButtons}</div>;
 }
 
 export default Keypad;
