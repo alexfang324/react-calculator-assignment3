@@ -1,78 +1,163 @@
 * {
-  font-family: "Press Start 2P", cursive;
+  font-family: "VT323", monospace;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
+
 body {
   margin: 0;
-  background: linear-gradient(to right, #dc8686, #f0dbaf);
-}
-#root {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background: linear-gradient(to right, #363062, #435585);
 }
 
 .app {
-  width: 400px;
-  height: 600px;
-  background-color: #212121;
+  display: flex;
+  width: 320px;
+  max-width: 100%;
+  height: 500px;
+  margin: 50px auto;
+  background-color: #333;
   padding: 20px;
-  border-radius: 20px;
-  border: solid 3px #424242;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  border: 3px solid #164863;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .header {
-  color: #ffeb3b;
-  margin: 10px 0;
+  font-family: "VT323", monospace;
+  color: #ddbf99;
+  margin-bottom: 10px;
   font-size: 24px;
+  text-align: center;
 }
 
 .screen {
   display: flex;
   justify-content: flex-end;
-  align-items: center;
-  width: 100%;
-  height: 80px;
-  background-color: #424242;
+  align-items: flex-end;
+  height: 100px;
+  background-color: #776b5d;
   border-radius: 10px;
   margin-bottom: 20px;
 }
 
 .display-value {
-  padding-right: 20px;
-  font-size: 36px;
-  color: #ffffff;
-}
-
-.button {
-  width: 80px;
-  height: 80px;
-  margin: 5px;
-  font-size: 18px;
-  background-color: #616161;
-  color: #ffffff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-.button:hover {
-  background-color: #757575;
+  padding: 0 10px;
+  font-size: 25px;
+  color: #fff;
 }
 
 .keypad {
   display: grid;
-
-  grid-template-columns: repeat(4, 1fr);
-  gap: 10px;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 15px;
+  padding: 10px;
+  text-align: center;
 }
 
-.large-button {
-  grid-column: span 2;
-  width: 170px;
+button.equal.grid-item {
+  font-size: 24px;
+  grid-column: span 3;
+  background-color: #776b5d;
+  grid-column: 3 / span 2;
+  grid-row: 6 / span 1;
+}
+
+/* Number Colors */
+button.one.grid-item,
+button.two.grid-item,
+button.three.grid-item,
+button.four.grid-item,
+button.five.grid-item,
+button.six.grid-item,
+button.nine.grid-item,
+button.eight.grid-item,
+button.seven.grid-item,
+button.zero.grid-item,
+button.decimal.grid-item {
+  background-color: #b0a695;
+  height: 35px;
+}
+
+button.ms.grid-item,
+button.mc.grid-item,
+button.mr.grid-item,
+button.m-minus.grid-item,
+button.m-plus.grid-item {
+  background-color: #427d9d;
+  height: 35px;
+}
+
+button.sign.grid-item,
+button.square-root.grid-item,
+button.percent.grid-item,
+button.add.grid-item,
+button.subtract.grid-item,
+button.divide.grid-item,
+button.multiply.grid-item {
+  background-color: #363062;
+  height: 35px;
+}
+
+/* Miscellaneous */
+button.ac.grid-item,
+button.c.grid-item,
+g {
+  background-color: #f5e8c7;
+  height: 35px;
+}
+
+button.ac.grid-item {
+  grid-column: 4 / span 1;
+}
+
+button.four.grid-item {
+  grid-column: 1 / span 1;
+}
+
+button.one.grid-item {
+  grid-column: 1 / span 1;
+}
+
+button.sign.grid-item {
+  grid-row: 3 / span 1;
+  grid-column: 4 / span 1;
+}
+
+button.percent.grid-item {
+  grid-row: 3 / span 1;
+  grid-column: 5 / span 1;
+}
+
+button.square-root.grid-item {
+  grid-row: 4 / span 1;
+  grid-column: 4 / span 1;
+}
+
+button.divide.grid-item {
+  grid-row: 4 / span 1;
+  grid-column: 5 / span 1;
+}
+
+button.multiply.grid-item {
+  grid-row: 5 / span 1;
+  grid-column: 4 / span 1;
+}
+
+button.subtract.grid-item {
+  grid-row: 5 / span 1;
+  grid-column: 5 / span 1;
+}
+button.zero.grid-item {
+  grid-column: 1 / span 1;
+}
+
+button.add.grid-item {
+  grid-column: 5 / span 1;
+}
+
+.button:hover {
+  background-color: #427d9d;
 }

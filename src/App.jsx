@@ -13,7 +13,7 @@ function App() {
   const onBtnClick = ({ type, text, value }) => {
     switch (type) {
       default:
-        setDisplayVal("button works");
+        setDisplayVal("3333333333333333333333333333333");
     }
   };
 
