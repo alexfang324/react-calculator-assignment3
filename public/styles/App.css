@@ -45,7 +45,7 @@ body {
 
 .display-value {
   padding: 0 10px;
-  font-size: 25px;
+  font-size: 30px;
   color: #fff;
 }
 
@@ -57,7 +57,13 @@ body {
   text-align: center;
 }
 
-button.equal.grid-item {
+.grid-item {
+  color: white;
+  background-color: #b0a695;
+  height: 35px;
+}
+
+.equal {
   font-size: 24px;
   grid-column: span 3;
   background-color: #776b5d;
@@ -65,96 +71,79 @@ button.equal.grid-item {
   grid-row: 6 / span 1;
 }
 
-/* Number Colors */
-button.one.grid-item,
-button.two.grid-item,
-button.three.grid-item,
-button.four.grid-item,
-button.five.grid-item,
-button.six.grid-item,
-button.nine.grid-item,
-button.eight.grid-item,
-button.seven.grid-item,
-button.zero.grid-item,
-button.decimal.grid-item {
-  background-color: #b0a695;
-  height: 35px;
-}
-
-button.ms.grid-item,
-button.mc.grid-item,
-button.mr.grid-item,
-button.m-minus.grid-item,
-button.m-plus.grid-item {
+.ms,
+.mc,
+.mr,
+.m-minus,
+.m-plus {
   background-color: #427d9d;
-  height: 35px;
 }
 
-button.sign.grid-item,
-button.square-root.grid-item,
-button.percent.grid-item,
-button.add.grid-item,
-button.subtract.grid-item,
-button.divide.grid-item,
-button.multiply.grid-item {
+.sign,
+.square-root,
+.percent,
+.add,
+.subtract,
+.divide,
+.multiply {
   background-color: #363062;
   height: 35px;
 }
 
 /* Miscellaneous */
-button.ac.grid-item,
-button.c.grid-item,
-g {
+.ac,
+.c {
   background-color: #f5e8c7;
   height: 35px;
+  color: black;
 }
 
-button.ac.grid-item {
+.ac {
   grid-column: 4 / span 1;
 }
 
-button.four.grid-item {
+.four {
   grid-column: 1 / span 1;
 }
 
-button.one.grid-item {
+.one {
   grid-column: 1 / span 1;
 }
 
-button.sign.grid-item {
+.sign {
   grid-row: 3 / span 1;
   grid-column: 4 / span 1;
 }
 
-button.percent.grid-item {
+.percent {
   grid-row: 3 / span 1;
   grid-column: 5 / span 1;
 }
 
-button.square-root.grid-item {
+.square-root {
   grid-row: 4 / span 1;
   grid-column: 4 / span 1;
 }
 
-button.divide.grid-item {
+.divide {
   grid-row: 4 / span 1;
   grid-column: 5 / span 1;
 }
 
-button.multiply.grid-item {
+.multiply {
   grid-row: 5 / span 1;
   grid-column: 4 / span 1;
 }
 
-button.subtract.grid-item {
+.subtract {
   grid-row: 5 / span 1;
   grid-column: 5 / span 1;
 }
-button.zero.grid-item {
+.zero {
   grid-column: 1 / span 1;
 }
 
-button.add.grid-item {
+.add {
   grid-column: 5 / span 1;
 }
 
